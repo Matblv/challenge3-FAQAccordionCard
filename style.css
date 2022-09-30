@@ -1,0 +1,139 @@
+/*'Kumbh Sans'- 400; 700 */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* text */
+    --veryDarkDesBlue: hsl(238, 29%, 16%);
+    --softRed: hsl(14, 88%, 65%);
+    /* gradient */
+    --softViolet: hsl(273, 75%, 66%);
+    --softBlue: hsl(240, 73%, 65%);
+    /* text */
+    --veryDarkGraBlue: hsl(237, 12%, 33%);
+    --darkGraBlue: hsl(240, 6%, 50%);
+    /* dividers */
+    --lightGrayishBlue: hsl(240, 5%, 91%);
+}
+
+*, *::before, *::after {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(var(--softViolet), var(--softBlue));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.bodyDiv {
+    position: relative;
+    top: 1.2rem;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    height: 100px;
+    width: 330px;
+    background-color: white;
+}
+
+.main {
+    width: 330px;
+    max-width: 330px;
+    height: 540px;
+    max-height: 540px;
+    background-color: white;
+    border-radius: 24px;
+    overflow: scroll;
+}
+
+.mainImageWoman {
+    position: absolute;
+    left: calc(50% - 120px);
+    top: -6.4rem;
+    height: 180px;
+    width: 240px;
+    z-index: 20;
+}
+
+.mainImageFloor {
+    position: absolute;
+    width: 240px;
+    left: calc(50% - 120px);
+    top: 0rem;
+    z-index: 10;
+}
+
+.mainContainer {
+    margin-top: 3rem;
+    overflow-y: scroll;
+}
+
+.mainTitle {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mainContainerFAQ {
+    border-bottom: solid 1px var(--lightGrayishBlue);
+    margin: 1rem;
+}
+
+.mainContainerQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonDown {
+    height: 10px;
+    width: 12px;
+}
+
+.mainContainerQuestionText {
+    font-weight: 400;
+    cursor: pointer;
+    Font-size: 15px;
+    color: var(--veryDarkGraBlue);
+}
+
+.mainContainerQuestionText:active {
+    font-weight: 700;
+    color: black;
+}
+
+.mainContainerAnswer {
+    margin: .8rem 0%;
+    height: 0px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.mainContainerAnswerText {
+    font-size: 13px;
+    color: var(--veryDarkGraBlue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
