@@ -32,12 +32,12 @@ body {
     min-width: 100vw;
 }
 
-.bodyDiv {
+ .bodyDiv {
     position: relative;
-    top: 1.2rem;
+    top: 2rem;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-    height: 100px;
+    height: 180px;
     width: 330px;
     background-color: white;
 }
@@ -45,17 +45,22 @@ body {
 .main {
     width: 330px;
     max-width: 330px;
-    height: 540px;
-    max-height: 540px;
+    height: 355px;
+    max-height: 355px;
     background-color: white;
     border-radius: 24px;
     overflow: scroll;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .mainImageWoman {
     position: absolute;
     left: calc(50% - 120px);
-    top: -6.4rem;
+    top: -6rem;
     height: 180px;
     width: 240px;
     z-index: 20;
@@ -65,18 +70,18 @@ body {
     position: absolute;
     width: 240px;
     left: calc(50% - 120px);
-    top: 0rem;
+    top: .2rem;
     z-index: 10;
 }
 
 .mainContainer {
-    margin-top: 3rem;
+    margin-top: 2rem;
     overflow-y: scroll;
 }
 
 .mainTitle {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-top: 7rem;
 }
 
 .mainContainerFAQ {

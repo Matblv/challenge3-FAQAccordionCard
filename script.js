@@ -4,6 +4,9 @@ const buttonDown = document.querySelectorAll(".buttonDown");
 const mainContainerAnswer = document.querySelectorAll(".mainContainerAnswer");
 let mainContainerAnswerText = document.querySelectorAll(".mainContainerAnswerText")
 
+const mainContainerFAQ = document.querySelectorAll(".mainContainerFAQ")
+
+
 for (let i = 0; i < mainContainerAnswer.length; i++) {
     let heightContainer = mainContainerAnswerText[i].clientHeight;
     let change = 0;
@@ -20,6 +23,7 @@ for (let i = 0; i < mainContainerAnswer.length; i++) {
             mainContainerAnswer[i].style.height = `0px`;
             mainContainerQuestionText[i].style.fontWeight = "400";
             mainContainerQuestionText[i].style.color = "var(--veryDarkGraBlue)";
+
             change--;
         }
         
