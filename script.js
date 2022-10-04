@@ -7,7 +7,6 @@ const imageBox = document.querySelector(".imageBox")
 
 const mainContainerFAQ = document.querySelectorAll(".mainContainerFAQ")
 
-
 for (let i = 0; i < mainContainerAnswer.length; i++) {
     let heightContainer = mainContainerAnswerText[i].clientHeight;
     let change = 0;
@@ -29,11 +28,11 @@ for (let i = 0; i < mainContainerAnswer.length; i++) {
             mainContainerQuestionText[i].style.fontWeight = "700";
             mainContainerQuestionText[i].style.color = "black";
             buttonDown[i].style.rotate = "180deg"
-
+            
             mainContainerQuestionText[i].addEventListener("mouseout", () => {
                 mainContainerQuestionText[i].style.color = ("black")
             })
-
+            
             change++;
         } else {
             mainContainerAnswer[i].style.height = `0px`;
@@ -44,7 +43,7 @@ for (let i = 0; i < mainContainerAnswer.length; i++) {
             mainContainerQuestionText[i].addEventListener("mouseout", () => {
                 mainContainerQuestionText[i].style.color = ("var(--veryDarkGraBlue)")
             })
-
+            
             change--;
         }
         
