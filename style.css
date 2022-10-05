@@ -136,6 +136,10 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
+.active {
+    height: 100px;
+}
+
 @media screen and (min-width: 1024px) {
     body {
         flex-direction: row;

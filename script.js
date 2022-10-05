@@ -21,7 +21,24 @@ for (let i = 0; i < mainContainerAnswer.length; i++) {
         imageBox.style.left = ("-100px");
     })
 
+
     mainContainerQuestion[i].addEventListener("click", () => {
+        mainContainerAnswer.forEach(element => {
+            element.style.height = `0px`;
+        });
+        
+        mainContainerQuestionText.forEach (element => {
+            element.style.fontWeight = "400";
+            element.style.color = "var(--veryDarkGraBlue)";
+            element.addEventListener("mouseout", () => {
+                element.style.color = ("var(--veryDarkGraBlue)");
+            });
+        });
+
+        buttonDown.forEach (e => {
+            e.style.rotate = "0deg";
+        });
+        
 
         if (change == 0) {
             mainContainerAnswer[i].style.height = `${heightContainer}px`;
@@ -32,9 +49,10 @@ for (let i = 0; i < mainContainerAnswer.length; i++) {
             mainContainerQuestionText[i].addEventListener("mouseout", () => {
                 mainContainerQuestionText[i].style.color = ("black")
             })
-            
-            change++;
-        } else {
+            change--;
+        } 
+        
+        else {
             mainContainerAnswer[i].style.height = `0px`;
             mainContainerQuestionText[i].style.fontWeight = "400";
             mainContainerQuestionText[i].style.color = "var(--veryDarkGraBlue)";
@@ -43,11 +61,9 @@ for (let i = 0; i < mainContainerAnswer.length; i++) {
             mainContainerQuestionText[i].addEventListener("mouseout", () => {
                 mainContainerQuestionText[i].style.color = ("var(--veryDarkGraBlue)")
             })
-            
-            change--;
+            change++;   
         }
-        
     })
     
-}
     
+}
